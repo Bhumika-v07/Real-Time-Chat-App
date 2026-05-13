@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Chat Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="sidebar">
+      <h1>RIPPLE</h1>
+
+      <form id="joinForm" class="panel">
+        <label>
+          Your name
+          <input id="nameInput" type="text" placeholder="Example: Bhumika" required>
+        </label>
+
+        <label>
+          Room name
+          <input id="roomInput" type="text" value="general" required>
+        </label>
+
+        <button type="submit">Join Room</button>
+      </form>
+
+      <section class="panel">
+        <h2>Online Users</h2>
+        <ul id="usersList" class="users"></ul>
+      </section>
+    </section>
+
+    <section class="chat">
+      <header class="chat-header">
+        <div>
+          <p class="eyebrow">Current Room</p>
+          <h2 id="roomTitle">general</h2>
+        </div>
+        <span id="status" class="status">Connecting...</span>
+      </header>
+
+      <div id="messages" class="messages"></div>
+
+      <form id="messageForm" class="message-form">
+        <select id="messageMode" title="Message type">
+          <option value="room">Room</option>
+          <option value="private">Private</option>
+        </select>
+
+        <input id="privateTo" type="text" placeholder="Send to" class="hidden">
+        <input id="messageInput" type="text" placeholder="Type your message..." required>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
