@@ -2,7 +2,7 @@
 
 A simple real-time chat project made with Node.js, WebSocket, HTML, CSS, and JavaScript.
 
-This project is intentionally kept beginner-friendly and easy to explain in interviews. It does not use React, Express, Socket.IO, or a database, so the real-time logic is visible in the code.
+This project is beginner-friendly. It does not use React, Express, Socket.IO, or a database, so the real-time logic is visible in the code.
 
 ## Features
 
