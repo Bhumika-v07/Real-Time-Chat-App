@@ -57,4 +57,4 @@ real-time-chat-app/
 - Chat history is lost when the server restarts
 - File sharing and notifications are not included
 
-These limitations are good future improvements to discuss with recruiters.
+These limitations are good future improvements.
